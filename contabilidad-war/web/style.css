@@ -1,0 +1,605 @@
+.wrapper {
+    color: #fff !important; /* Texto en blanco */
+    border-radius: 5px !important;
+    align-items: center !important;
+}
+.navbar-light {
+    color: #fff !important;
+    padding: 5px  !important;
+    text-align: center !important;
+}
+/* Estilo para la clase .content */
+.wrapper.fixed-left {
+    color: #fff !important; /* Texto en blanco */
+    border-right: 1px solid #1565C0 !important; /* Borde derecho */
+}
+.content {
+    padding: 20px !important; /* Aumentar el espaciado interno */
+    min-height: 100vh !important;
+    transition: margin-left 0.3s, padding 0.3s !important; /* Agregar transición al espaciado interno */
+    background-color: #F5F5F5 !important; /* Fondo gris claro similar a Angular */
+    color: #333; /* Texto en gris oscuro */
+}
+/* Estilo para los nodos del árbol */
+.custom-menu-node .ui-treenode-content {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para los iconos en los nodos */
+.custom-menu-node .ui-treenode-content .ui-treenode-leaf-icon {
+    margin-right: 5px; /* Añade un pequeño espacio entre el icono y el texto */
+}
+
+/* Estilo para los nodos colapsados */
+.custom-menu-node .ui-treenode-content .ui-tree-toggler.ui-icon-folder-collapsed {
+    margin-right: 5px; /* Añade espacio entre el icono y el texto cuando el nodo está colapsado */
+}
+
+/* Estilo para los nodos expandibles */
+.custom-menu-node .ui-treenode-content .ui-tree-toggler.ui-icon-folder-open {
+    margin-right: 5px; /* Añade espacio entre el icono y el texto cuando el nodo está expandible */
+}
+
+/* Alinear el título del menú al centro */
+#menu-title {
+    text-align: center;
+    color: blue; /* Color del título del menú */
+}
+
+/* Estilo de menú de PrimeFaces */
+.custom-menu-node .ui-treenode-content {
+    border: 1px solid #bbd9ee; /* Borde con color azul más oscuro */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease; /* Transición suave de color de fondo */
+     background-color: #f0f7ff; 
+}
+
+/* Estilo de menú padre (cerrado) */
+.custom-menu-node.root.closed .ui-treenode-content {
+    background-color: transparent; /* Color celeste palido */
+}
+
+/* Estilo de menú padre (abierto) */
+.custom-menu-node.root.open .ui-treenode-content {
+    background-color: #fff; /* Color blanco */
+    box-shadow: none; /* Sin sombra */
+    border: none; /* Sin borde */
+}
+
+/* Estilo para los nodos de página */
+.custom-page-node .ui-treenode-content {
+    /* Estilo para las páginas */
+    border: none;
+    background-color: transparent; /* Fondo blanco */
+}
+/* Estilo para el menú lateral */
+#sidebar {
+     text-align: left;
+    position: fixed ;
+    left: -350px;
+    height: 100%;
+    width: 300px;
+    background-color: #ccc;
+    padding-top: 30px;
+    transition: all 0.3s;
+    margin-top: 40px;
+    overflow-y: auto; /* Agregar desplazamiento vertical si es necesario */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+}
+
+/* Estilo para el menú lateral cuando está activo */
+#sidebar.active {
+    left: 0;
+    background-color: #D5D5D5 !important; /* Fondo azul similar a Angular */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important; /* Sombra suave */
+}
+
+/* Estilo mejorado para el encabezado del menú lateral */
+.sidebar .sidebar-header {
+    padding: 20px;
+    color: #fff; /* Texto en blanco */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+
+/* Estilo para el botón de cierre */
+.dismiss {
+    color: #fff !important;
+    position: absolute !important;
+    top: 10px !important; /* Ajustar la posición vertical */
+    right: 10px !important;
+    cursor: pointer !important;
+    font-size: 24px !important; /* Tamaño del icono */
+    background-color: #ff5722 !important; /* Cambiar el color de fondo */
+    border-radius: 50% !important; /* Hacer el botón redondeado */
+    padding: 5px !important; /* Añadir espacio interior al botón */
+    transition: background-color 0.3s !important; /* Agregar transición de color de fondo */
+}
+
+#dismiss:hover {
+    background-color: #f44336 !important; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+
+.logo {
+    display: inline-block !important;
+    margin-top: 7px !important;
+    color: #fff !important;
+    text-align: center !important;
+}
+#navbarSupportedContent {
+    ul.navbar-nav.ml-auto {
+        li.nav-item {
+            a.nav-link {
+                color: #fff !important; /* Texto en blanco */
+                i.fas {
+                    color: #fff !important; /* Color del ícono en blanco */
+                }
+            }
+        }
+    }
+}
+
+#link:hover {
+    color: #1565C0 !important; /* Color al pasar el mouse sobre los enlaces */
+}
+/* Estilo personalizado para que el título del menú se asemeje a Angular */
+#menu-title {
+    text-align: center !important;
+    font-size: 24px !important;
+    color: #1976D2 !important; /* Color similar al estilo de Angular */
+    font-weight: bold !important;
+    text-transform: uppercase !important; /* Texto en mayúsculas */
+}
+
+/* Estilo para el botón que muestra/oculta el menú */
+#sidebarCollapse {
+    color: #fff !important;
+    background: #1976D2 !important; /* Fondo azul similar a Angular */
+    outline: none !important;
+    border: none !important; /* Sin borde */
+    padding: 10px !important; /* Espaciado interno */
+    margin: 0 20px !important;
+    font-size: 20px !important; /* Tamaño del icono */
+    cursor: pointer !important;
+    transition: background-color 0.s !important; /* Transición de color de fondo */
+}
+
+.sidebarCollapse:hover {
+    background: #1565C0 !important; /* Fondo azul más oscuro en hover */
+}
+
+/* Ajustar el contenido principal cuando se muestra el menú */
+/* Estilo para el contenido */
+/* Estilo mejorado para el contenido */
+.content .blue {
+    color: #fff !important; /* Texto en blanco */
+    border: 1px solid #1565C0 !important; /* Borde */
+}
+.content .blue p {
+    color: #fff !important ; /* Texto en blanco */
+    font-weight: bold !important;
+}
+
+/* Estilo para el contenido activo (cuando el menú está desplegado) */
+#content.active {
+    margin-left: 300px; /* Alinea el contenido con el menú desplegado */
+    padding-left: 30px; /* Ajusta el espaciado izquierdo para evitar solapamiento */
+    transition: margin-left 0.3s, padding-left 0.3s; /* Transición suave para el espaciado izquierdo */
+}
+
+#sidebar ul li a:hover {
+    color: #6240bd !important;
+    background: #fff !important;
+    text-decoration: none !important;
+}
+
+
+/* Estilo personalizado para la tabla */
+/* Estilo personalizado para la tabla */
+.ui-datatable {
+    border: 1px solid #dcdcdc !important; /* Borde de la tabla */
+    border-collapse: collapse !important; /* Colapso del borde */
+    width: 100% !important; /* Ancho de la tabla al 100% */
+    background-color: #ffffff !important; /* Color de fondo de la tabla */
+    font-weight: bold !important; /* Estilo de fuente para toda la tabla */
+}
+/* Aumentar el tamaño de todos los íconos en tu página */
+.icon {
+    icon: 54px !important; /* Ajusta el tamaño según tus preferencias */
+}
+
+/* Estilo para las celdas de datos de la tabla */
+.ui-datatable tbody td {
+    border: 1px solid #dcdcdc !important; /* Borde de las celdas de datos */
+}
+
+/* Estilo personalizado para todos los encabezados de columna */
+.ui-datatable thead th {
+    background-color: #e4f2fd !important; /* Color de fondo para mensajes de información (SEVERITY_INFO) */
+    border-color: #88bde6 !important; /* Color del borde para mensajes de información (SEVERITY_INFO) */
+    color: #0071c5 !important; /* Color del texto para mensajes de información (SEVERITY_INFO) */
+    font-weight: bold !important; /* Estilo de fuente para mensajes de información (SEVERITY_INFO) */
+    /**/
+}
+
+/* Estilo para filas pares */
+.ui-datatable tbody tr:nth-child(even) {
+    background-color: #f2f2f2 !important; /* Color de fondo para filas pares */
+}
+
+/* Estilo para filas impares */
+.ui-datatable tbody tr:nth-child(odd) {
+    background-color: #ffffff !important; /* Color de fondo para filas impares */
+}
+
+/* Estilo para las filas seleccionadas */
+.ui-datatable tbody tr.ui-state-highlight {
+    background-color: #0071c5 !important; /* Color de fondo para las filas seleccionadas */
+    color: #ffffff !important; /* Color del texto en las filas seleccionadas */
+}
+/* Estilo para resaltar filas al pasar el mouse sobre ellas */
+/* Estilo para resaltar filas al pasar el mouse sobre ellas */
+.ui-datatable tbody tr:hover {
+    background-color: #f0f0f0 !important; /* Color de fondo al pasar el mouse sobre las filas */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que se puede hacer clic */
+    box-shadow: 0px 0px 5px 0px #888; /* Agregar una sombra al hacer hover */
+}
+
+.ui-datatable tbody tr.ui-state-highlight {
+    background-color: #0071c5 !important; /* Color de fondo para las filas seleccionadas */
+    color: #ffffff !important; /* Color del texto en las filas seleccionadas */
+}
+
+
+/* Estilo para la paginación de la tabla */
+.ui-paginator {
+    background-color: #ffffff !important; /* Color de fondo de la paginación */
+    border: 1px solid #dcdcdc !important; /* Borde de la paginación */
+}
+
+/* Estilo para los botones de paginación */
+.ui-paginator .ui-paginator-first,
+.ui-paginator .ui-paginator-prev,
+.ui-paginator .ui-paginator-next,
+.ui-paginator .ui-paginator-last,
+.ui-paginator .ui-paginator-pages {
+    background-color: #0071c5 !important; /* Color de fondo de los botones de paginación */
+    color: #ffffff !important; /* Color del texto en los botones de paginación */
+    border: 1px solid #0071c5 !important; /* Borde de los botones de paginación */
+    font-weight: bold !important; /* Estilo de fuente para los botones de paginación */
+}
+
+/* Estilo para los enlaces de páginas */
+.ui-paginator .ui-paginator-pages .ui-paginator-page.ui-state-default {
+    background-color: #0071c5 !important; /* Color de fondo de los enlaces de páginas */
+    color: #ffffff !important; /* Color del texto en los enlaces de páginas */
+    border: 1px solid #0071c5 !important; /* Borde de los enlaces de páginas */
+    font-weight: bold !important; /* Estilo de fuente para los enlaces de páginas */
+}
+
+
+/* Estilo para el tabView */
+.ui-tabview {
+    font-family: Arial, sans-serif !important ;
+}
+
+/* Estilo para las pestañas */
+.ui-tabview-nav {
+    background-color: #6a76f8 !important; /* Fondo azul para las pestañas */
+    color: #fff !important; /* Texto en blanco para las pestañas */
+    border: none !important;
+}
+
+.ui-tabview-nav .ui-state-default {
+    background-color: #6a76f8 !important; /* Fondo azul para la pestaña activa */
+    color: #fff !important; /* Texto en blanco para la pestaña activa */
+    border: none !important;
+    padding: 10px 20px !important; /* Espaciado interno */
+    border-radius: 5px 5px 0 0 !important; /* Esquinas redondeadas en la pestaña activa */
+}
+
+.ui-tabview-nav .ui-state-default.ui-state-active {
+    background-color: #fff !important; /* Fondo blanco para la pestaña activa */
+    color: #6a76f8 !important; /* Texto azul para la pestaña activa */
+}
+
+
+/* Estilo para todos los formularios */
+h\\:form {
+    font-family: Arial, sans-serif !important;
+    padding: 20px !important; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 5px !important; /* Esquinas redondeadas */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) !important; /* Sombra ligera */
+    background: #D5D5D5 !important;
+}
+
+/* Estilo para las pestañas */
+.ui-tabs .ui-tabs-nav {
+    background-color: #f0f0f0 !important ; /* Fondo gris claro para la barra de pestañas */
+    border-bottom: 2px solid #6a76f8 !important; /* Línea inferior morada */
+    margin-bottom: 15px !important; /* Espacio entre la barra de pestañas y el contenido */
+}
+
+
+.ui-tabs .ui-tabs-nav li.ui-state-active {
+    background-color: #67a8ce !important; /* Fondo morado para la pestaña activa */
+    color: #fff !important; /* Texto en blanco para la pestaña activa */
+    border-color: #6a76f8 !important; /* Borde morado para la pestaña activa */
+    border-radius: 5px !important; /* Esquinas redondeadas en la pestaña activa */
+}
+
+.ui-tabs .ui-tabs-nav li:hover {
+    background-color: #ccc !important; /* Fondo gris claro en hover */
+    border-color: #6a76f8 !important; /* Borde morado en hover */
+}
+
+/* Estilo para el contenido de las pestañas */
+.ui-tabs  {
+    background-color: #fff !important; /* Fondo blanco para el contenido */
+    border: 2px solid #6a76f8 !important; /* Borde morado */
+    border-radius: 5px !important; /* Esquinas redondeadas en el contenido */
+    padding: 20px !important; /* Espaciado interno */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) !important; /* Sombra ligera */
+}
+/* Estilo para los panelGrid */
+.ui-panelgrid {
+    width: 100% !important;
+    border: none !important;
+}
+
+.ui-panelgrid td, .ui-panelgrid th {
+    padding: 10px !important;
+    text-align: left !important;
+    vertical-align: top !important;
+    border: none !important;
+}
+
+/* Estilo para los paneles */
+.ui-panel {
+    width: 100% !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    padding: 20px !important;
+}
+
+/* Estilo para el encabezado de los paneles */
+.ui-panel .ui-panel-title {
+    font-size: 16px !important;
+    font-weight: bold !important;
+    color: #333 !important;
+}
+/* Estilo para los elementos dentro del panelGrid */
+.ui-panelgrid .ui-outputlabel{
+    margin-right: 10px !important; /* Agregar espacio entre los elementos */
+    margin-bottom: 10px !important; /* Agregar espacio vertical entre los elementos */
+    display: inline-block !important; /* Hacer que los elementos se muestren en línea */
+    vertical-align: top !important; /* Alinear los elementos en la parte superior */
+}
+/* Estilo para los elementos de inputText con colores similares a Angular */
+.ui-panelgrid .ui-inputtext,
+.ui-inputtext {
+    color: #6a76f8 !important;
+    padding: 4px !important; /* Espaciado interno */
+    border-radius: 4px !important; /* Bordes redondeados */
+    color: #333 !important; /* Texto en gris oscuro */
+}
+
+/* Estilo para resaltar los elementos de inputText en hover y focus */
+.ui-inputtext:hover,
+.ui-inputtext:focus {
+    background-color: #E0E0E0 !important; /* Fondo gris más claro en hover/focus */
+    border-color: #999 !important; /* Borde gris más oscuro en hover/focus */
+}
+/* Estilo personalizado para el diálogo PrimeFaces */
+/* Estilo personalizado para el diálogo PrimeFaces */
+/* Estilo personalizado para el diálogo PrimeFaces */
+.ui-dialog {
+    background: #fff  !important; /* Cambiar el color de fondo del diálogo */
+    border: 1px solid #1976D2 !important; /* Agregar un borde azul alrededor del diálogo */
+    border-radius: 8px !important; /* Agregar bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Agregar una sombra suave */
+    padding: 20px !important; /* Espaciado interno del diálogo */
+}
+
+/* Estilo para el encabezado del diálogo */
+/* Cambiar el color de fondo del encabezado del diálogo */
+
+/* Estilo para el botón de cierre del diálogo */
+.ui-dialog-titlebar .ui-dialog-title {
+    color: black !important; /* Cambiar el color del texto del encabezado a blanco */
+    border-radius: 0 8px 0 0 !important; /* Bordes redondeados solo en la esquina superior izquierda */
+     text-align: left !important;
+    
+}
+
+.ui-dialog-titlebar-icon:hover {
+    background: rgba(255, 255, 255, 0.1) !important; 
+     cursor: pointer; /* Cambia el cursor a una mano para indicar que se puede hacer clic */
+    box-shadow: 0px 0px 5px 0px #888;/* Cambiar el fondo al pasar el mouse sobre el botón de cierre */
+}
+
+/* Estilo para el contenido del diálogo */
+.ui-dialog-content {
+    font-size: 16px !important; /* Tamaño de fuente del contenido */
+}
+
+/* Estilo para los mensajes dentro del diálogo */
+.ui-dialog-content .alert {
+    background: #E91E63 !important; /* Cambiar el color de fondo de los mensajes */
+    color: #fff !important; /* Cambiar el color del texto de los mensajes a blanco */
+    padding: 10px !important; /* Espaciado interno para los mensajes */
+    border-radius: 4px !important; /* Bordes redondeados para los mensajes */
+    margin-bottom: 10px !important; /* Espaciado entre mensajes */
+}
+
+/* Estilo para los mensajes de detalle dentro del diálogo */
+.ui-dialog-content .alert .ui-messages-detail {
+    font-weight: bold !important; /* Texto en negrita para el detalle de los mensajes */
+}
+
+/* Estilo para los botones en el contenido */
+.ui-dialog-content{
+    color: #fff !important; /* Cambiar el color del texto de los botones a blanco */
+    border: none !important; /* Eliminar el borde de los botones */
+    border-radius: 4px !important; /* Bordes redondeados para los botones */
+    margin: 5px !important; /* Margen entre botones */
+    cursor: pointer !important;
+    padding: 6px 5px !important; /* Espaciado interno de los botones */
+    transition: background-color 0.3s !important; /* Transición suave para el color de fondo */
+    icon: auto;
+}
+/* Estilo del encabezado del diálogo */
+.ui-dialog .ui-dialog-title {
+     background-color: #ccc !important; /* Color de fondo para mensajes de información (SEVERITY_INFO) */
+    border-color: #88bde6 !important; /* Color del borde para mensajes de información (SEVERITY_INFO) */
+    color: #0071c5 !important; /* Color del texto para mensajes de información (SEVERITY_INFO) */
+    font-weight: bold !important; /* Estilo de fuente para mensajes de información (SEVERITY_INFO) */
+    /* Otras propiedades de estilo personalizado que desees */
+    padding: 10px !important; /* Espaciado interno para el título */
+    border-radius: 5px 5px 5px 5px !important; /* Bordes redondeados en la parte superior */
+    width: 95% !important;
+    text-align: center !important;
+}
+
+/* Estilo del botón de cierre del diálogo */
+.ui-dialog .ui-dialog-titlebar-icon {
+    background-color: #f0f0f0 !important; /* Color de fondo similar al azul de Angular */
+    border-color: blue !important;
+    color: blue !important; /* Color de texto */
+    font-weight: bold !important;
+    border-radius: 5px 5px 0 0 !important; /* Bordes redondeados en la parte superior */
+    text-align: right !important;
+    
+}
+
+.ui-button {
+    background: #1976D2 !important; /* Cambiar el color de fondo de los botones */
+    color: #fff !important; /* Cambiar el color del texto de los botones a blanco */
+    border: none !important; /* Eliminar el borde de los botones */
+    border-radius: 4px !important; /* Bordes redondeados para los botones */
+    margin: 5px !important; /* Margen entre botones */
+    cursor: pointer !important;
+    padding: 6px 5px !important; /* Espaciado interno de los botones */
+    transition: background-color 0.3s !important; /* Transición suave para el color de fondo */
+    icon: auto;
+}
+
+.ui-dialog-content .ui-button:hover {
+    background: #1565C0 !important; /* Cambiar el color de fondo al pasar el mouse sobre los botones */
+ cursor: pointer; /* Cambia el cursor a una mano para indicar que se puede hacer clic */
+    box-shadow: 0px 0px 5px 0px #888;
+}
+.ui-button:hover {
+    background: #999 !important; /* Cambiar el color de fondo al pasar el mouse sobre los botones */
+ cursor: pointer  !important; /* Cambia el cursor a una mano para indicar que se puede hacer clic */
+    box-shadow: 0px 0px 5px 0px #888  !important;
+}
+/* Estilo para el formulario */
+.form {
+    font-family: Arial, sans-serif !important ;
+    margin: 0 !important;
+    padding: 20px !important;
+    background-color: #ffffff !important; /* Fondo blanco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Sombra suave */
+}
+
+
+/* Estilo para los mensajes */
+.messages {
+    color: #222 !important; /* Texto en blanco */
+    padding: 10px !important; /* Espaciado interno */
+    border-radius: 4px !important; /* Bordes redondeados */
+    margin-bottom: 10px !important; /* Margen inferior */
+    width: 100% !important;
+}
+
+/* Estilo para los mensajes de detalle */
+.messages .ui-message-detail {
+    color: #222 !important; /* Texto de detalle en blanco */
+}
+
+/* Estilo para el botón de cierre de los mensajes */
+.messages .ui-messages-close {
+    color:#E91E63 !important; /* Texto de cierre en blanco */
+}
+/* Estilo personalizado para el menú PrimeFaces */
+.menu {
+    background-color: #1976D2 !important; /* Color de fondo similar a Angular */
+    color: #fff !important; /* Texto en blanco */
+}
+
+/* Estilo para los elementos del menú */
+.ui-menu,
+.ui-menuitem {
+    transition: background-color 0.2s !important;
+}
+
+/* Estilo para los elementos activos o resaltados */
+.ui-menuitem.ui-state-active {
+    background-color: #1565C0 !important; /* Color de fondo al activar elemento */
+    color: #fff !important;
+}
+
+/* Estilo al pasar el mouse sobre los elementos */
+.menu-title,
+.custom-menu,
+.ui-menuitem:hover {
+    background-color: #1565C0 !important; /* Color de fondo al pasar el mouse */
+    color: #fff !important;
+     cursor: pointer; /* Cambia el cursor a una mano para indicar que se puede hacer clic */
+    box-shadow: 0px 0px 5px 0px #888;
+}
+/* Estilo para el título del menú similar a Angular */
+.menu-title {
+    text-align: center !important;
+    color: #1976D2 !important; /* Cambiar el color del texto a azul similar a Angular */
+    font-size: 24px !important; /* Tamaño de fuente */
+    font-weight: bold !important; /* Texto en negrita */
+}
+/* Estilo para p:outputLabel */
+.ui-outputlabel {
+    font-weight: bold !important;
+    color: blue !important;
+}
+/* Agrega !important a tus estilos personalizados */
+
+.ui-messages-info {
+    width: 100% !important;
+    background-color: #e4f2fd !important; /* Color de fondo para mensajes de información (SEVERITY_INFO) */
+    border-color: #88bde6 !important; /* Color del borde para mensajes de información (SEVERITY_INFO) */
+    color: #0071c5 !important; /* Color del texto para mensajes de información (SEVERITY_INFO) */
+    font-weight: bold !important; /* Estilo de fuente para mensajes de información (SEVERITY_INFO) */
+    /* Otras propiedades de estilo personalizado que desees */
+}
+
+.ui-messages-warn {
+    background-color: #fffae6 !important; /* Color de fondo para mensajes de advertencia (SEVERITY_WARN) */
+    border-color: #ffd700 !important; /* Color del borde para mensajes de advertencia (SEVERITY_WARN) */
+    color: #ff9900 !important; /* Color del texto para mensajes de advertencia (SEVERITY_WARN) */
+    font-weight: bold !important; /* Estilo de fuente para mensajes de advertencia (SEVERITY_WARN) */
+    /* Otras propiedades de estilo personalizado que desees */
+}
+
+.ui-messages-error {
+    background-color: #ffdddd !important; /* Color de fondo para mensajes de error (SEVERITY_ERROR) */
+    border-color: #ff3333 !important; /* Color del borde para mensajes de error (SEVERITY_ERROR) */
+    color: #cc0000 !important; /* Color del texto para mensajes de error (SEVERITY_ERROR) */
+    font-weight: bold !important; /* Estilo de fuente para mensajes de error (SEVERITY_ERROR) */
+    /* Otras propiedades de estilo personalizado que desees */
+}
+
+.ui-messages-fatal {
+    background-color: #ffcccc !important; /* Color de fondo para mensajes fatales (SEVERITY_FATAL) */
+    border-color: #ff0000 !important; /* Color del borde para mensajes fatales (SEVERITY_FATAL) */
+    color: #990000 !important; /* Color del texto para mensajes fatales (SEVERITY_FATAL) */
+    font-weight: bold !important; /* Estilo de fuente para mensajes fatales (SEVERITY_FATAL) */
+    /* Otras propiedades de estilo personalizado que desees */
+}
+
